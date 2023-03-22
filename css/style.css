@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --Red: hsl(0, 100%, 68%);
+  --Very-Dark-Blue: hsl(230, 29%, 20%);
+  --Dark-Grayish-Blue: hsl(230, 11%, 40%);
+  --Grayish-Blue: hsl(231, 7%, 65%);
+  --Light-Grayish-Blue: hsl(207, 33%, 95%);
+}
+body {
+  font-family: "Barlow", sans-serif;
+  min-height: 100vh;
+  display: grid;
+  width: 100%;
+  padding: 0 150px;
+  padding-right: 0;
+  margin-right: 0;
+}
+/* ------------------------------------------------------------------ */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding: 0 20px;
+  padding-right: 0;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background-color: var(--Light-Grayish-Blue);
+  width: 550px;
+  height: 500px;
+  border-bottom-left-radius: 50px;
+}
+.navbar-links:hover {
+  cursor: pointer;
+  border-bottom: 1.5px solid var(--Very-Dark-Blue);
+}
+
+ul {
+  list-style: none;
+}
+
+.nav-menu li a {
+  list-style: none;
+  text-decoration: none;
+}
+#login-button {
+  color: var(--Grayish-Blue);
+  background-color: transparent;
+  text-transform: uppercase;
+  border: none;
+}
+#login-button:hover {
+  cursor: pointer;
+  border-bottom: 1px solid var(--Very-Dark-Blue);
+}
+.nav-item a {
+  color: var(--Very-Dark-Blue);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.nav-item:hover {
+  cursor: pointer;
+  border-bottom: 1.5px solid var(--Very-Dark-Blue);
+}
+/* ------------------------------------------------------------------ */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* ----------------------Hamburger Menu------------------------------ */
+
+.hamburgerMenu {
+  display: none;
+  cursor: pointer;
+}
+.bar {
+  display: block;
+  width: 30px;
+  height: 4px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #040404;
+}
+
+/* ------------------------------------------------------------------ */
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.new-dashboard button {
+  background-color: var(--Very-Dark-Blue);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 25px;
+  text-transform: uppercase;
+}
+.new-dashboard span,
+.schedule span {
+  color: var(--Dark-Grayish-Blue);
+  text-transform: uppercase;
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 3px;
+  margin-left: 6px;
+  font-size: 12px;
+}
+h1 {
+  width: 500px;
+  text-transform: uppercase;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1;
+  padding-top: 10px;
+}
+.project-planning {
+  padding: 20px 0;
+  width: 250px;
+  font-size: 16px;
+}
+.schedule {
+  display: inline;
+}
+.schedule-btn {
+  background-color: var(--Red);
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-family: "Barlow Condensed", sans-serif;
+}
+.schedule-btn:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+aside img {
+  width: 100%;
+}
+aside {
+  background-image: url(../images/illustration-devices.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* ------------------------Footer--------------------------------------- */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 20px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* ------------------------------------------------------------------ */
